@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" (ngSubmit)="pushUser()">
+  <input [formControl]="name">
+  <input type="number" [formControl]="age">
+  <button [disabled]="myForm.invalid" type="submit">save</button>
+</form>
+
+<!--<div *ngFor="let user of users">-->
+<!--  {{user|json}}-->
+<!--</div>-->

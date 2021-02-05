@@ -1,0 +1,5 @@
+<form #myForms='ngForm' (ngSubmit)="check(myForms)">
+  <input type="text" [(ngModel)]="name" [name]="'name1'">
+  <input type="number" [(ngModel)]="age" [name]="'age1'">
+  <button>save</button>
+</form>
